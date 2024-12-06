@@ -114,7 +114,7 @@ done
 
 # Check the overall test status and exit accordingly
 if [ "$all_passed" = true ]; then
-    echo "All tests passed"
+    echo "All tests are successful"
     exit 0
 else
     cat "${test_container}.txt"
