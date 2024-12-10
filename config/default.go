@@ -26,11 +26,11 @@ containerName: ""
 networkName: ""
 buildDelay: 30
 test:
-  selectedTests: {}
-  ignoredTests: {}
+  selectedTests: []
+  ignoredTests: []
   globalNoise:
-    global: {}
-    test-sets: {}
+    global: []
+    test-sets: []
   delay: 5
   host: ""
   port: 0
