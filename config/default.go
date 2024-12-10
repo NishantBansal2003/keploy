@@ -14,7 +14,7 @@ appId: 0
 appName: ""
 command: ""
 templatize:
-  testSets: {}
+  testSets: []
 port: 0
 proxyPort: 16789
 dnsPort: 26789
@@ -59,8 +59,8 @@ contract:
   mappings:
     servicesMapping: {}
     self: "s1"
-  services: {}
-  tests: {}
+  services: []
+  tests: []
   path: ""
   download: false
   generate: false
