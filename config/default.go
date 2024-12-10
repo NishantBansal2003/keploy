@@ -30,7 +30,7 @@ test:
   ignoredTests: []
   globalNoise:
     global: []
-    test-sets: []
+    test-sets: {}
   delay: 5
   host: ""
   port: 0
