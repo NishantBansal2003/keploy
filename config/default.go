@@ -14,7 +14,7 @@ appId: 0
 appName: ""
 command: ""
 templatize:
-	testSets: {}
+  testSets: {}
 port: 0
 proxyPort: 16789
 dnsPort: 26789
@@ -56,8 +56,9 @@ configPath: ""
 bypassRules: []
 contract:
   driven: "consumer"
-  servicesMapping: {}
-  self: "s1"
+  mappings:
+    servicesMapping: {}
+    self: "s1"
   services: {}
   tests: {}
   path: ""
