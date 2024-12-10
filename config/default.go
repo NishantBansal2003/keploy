@@ -27,6 +27,7 @@ networkName: ""
 buildDelay: 30
 test:
   selectedTests: {}
+  ignoredTests: {}
   globalNoise:
     global: {}
     test-sets: {}
@@ -48,22 +49,20 @@ test:
   disableMockUpload: true
   useLocalMock: false
   updateTemplate: false
-  ignoredTests: {}
 record:
   recordTimer: 0s
   filters: []
 configPath: ""
 bypassRules: []
 contract:
+  driven: "consumer"
+  servicesMapping: {}
+  self: "s1"
   services: {}
   tests: {}
   path: ""
   download: false
   generate: false
-  driven: "consumer"
-  mappings:
-    servicesMapping: {}
-    self: "s1"
 inCi: false
 `
 
