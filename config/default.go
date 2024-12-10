@@ -43,9 +43,9 @@ test:
   fallBackOnMiss: false
   jacocoAgentPath: ""
   basePath: ""
-  mocking: false
+  mocking: true
   disableLineCoverage: false
-  disableMockUpload: false
+  disableMockUpload: true
   useLocalMock: false
   updateTemplate: false
   ignoredTests: {}
