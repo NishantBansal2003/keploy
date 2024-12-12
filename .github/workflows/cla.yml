@@ -27,6 +27,10 @@ jobs:
           path-to-document: "https://github.com/keploy/keploy/tree/main/.github/CLA.md"
           branch: "cla-signatures"
           allowlist: "keploy-bot,renovate"
+          
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
       - name: "Comment on PR Failure"
         if: failure()
         run: |
