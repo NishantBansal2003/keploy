@@ -27,10 +27,14 @@ jobs:
           path-to-document: "https://github.com/keploy/keploy/tree/main/.github/CLA.md"
           branch: "cla-signatures"
           allowlist: "keploy-bot,renovate"
-      - name: "Post Failure Instructions"
+      - name: "Comment on PR Failure"
         if: failure()
         run: |
-          echo "::error::The CLA check failed. Please ensure you have:
-          1. Signed the CLA by commenting 'I have read the CLA Document and I hereby sign the CLA.'
-          2. Used the correct email address in your commits (matches the one you used to sign the CLA).
-          3. After resolving, trigger a recheck by commenting 'recheck'."
+          gh pr comment ${{ github.event.pull_request.number }} --body "The CLA check failed. Please ensure you have:
+          - Signed the CLA by commenting 'I have read the CLA Document and I hereby sign the CLA.'
+          - Used the correct email address in your commits (matches the one you used to sign the CLA).
+          After fixing these issues, comment 'recheck' to trigger the workflow again."
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
+        
