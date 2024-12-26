@@ -23,10 +23,10 @@ jobs:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           PERSONAL_ACCESS_TOKEN: "${{ secrets.PRO_ACCESS_TOKEN }}"
         with:
-          remote-organization-name: "keploy"
+          remote-organization-name: "NishantBansal2003"
           remote-repository-name: "keploy"
           path-to-signatures: "etc/cla-signatures/signatures.json"
-          path-to-document: "https://github.com/keploy/keploy/tree/main/.github/CLA.md"
+          path-to-document: "https://github.com/NishantBansal2003/keploy/blob/main/.github/CLA.md"
           branch: "cla-signatures"
           allowlist: "keploy-bot,renovate"
 
